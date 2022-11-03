@@ -1,0 +1,9 @@
+.antonym-section{
+    margin: 2vh 0 2vh 0;
+
+}
+@media only screen and (min-width: 320px){
+    .antonym-section{
+        margin-left: 5vh;
+    } 
+}

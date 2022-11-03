@@ -1,0 +1,35 @@
+.wordImages{
+    border-top: 1px solid black;
+}
+.images-section{
+    display: flex;  
+    max-width:100vw;
+    overflow-x: scroll;
+}
+.imageTitle{
+    font-size: 2vh;
+    font-weight: 500;
+    color: rgb(58, 37, 37);
+}
+@media only screen and (min-width: 320px){
+    .image-section{
+        flex-wrap: nowrap;
+        overflow-x: scroll;
+        height: 100px;
+    }
+    .imageTitle{
+        margin-left: 5vh;
+        font-size: 3vh;
+    }
+    
+}
+@media only screen and (min-width: 320px){
+    .imageTitle{
+        margin-left: 10vh;
+    } 
+}
+@media only screen and (min-width: 950px){
+    .imageTitle{
+      margin-left: 15vh;
+    }
+  }

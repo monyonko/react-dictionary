@@ -1,0 +1,7 @@
+.individual-image{
+    flex: 1;
+    padding:1vh;
+}
+img{
+    margin: .2vh;
+}
