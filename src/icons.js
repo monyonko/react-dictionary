@@ -12,8 +12,7 @@ const Icons = (props) => {
     }
     return(
         <UseAnimations reverse={checked} onClick={() => { 
-            setChecked(!checked);
-            
+            setChecked(!checked);  
         }}
         size={25}
         wrapperStyle={{ marginRight: '1px' }}
