@@ -68,7 +68,7 @@ function App() {
         
       </main>
       <footer>
-      <p>Coded by <a href="https://github.com/monyonko">Kemuma</a>, open-sourced at <a href="https://github.com/monyonko/react-dictionary">Github</a> and hosted on Netlify.</p>
+      <p>Coded by <a href="https://github.com/monyonko">Kemuma</a>, open-sourced at <a href="https://github.com/monyonko/react-dictionary">Github</a> and hosted on <a href="https://react-dictionary-sable.vercel.app/">Vercel</a>.</p>
       </footer>
     </div>
   );
