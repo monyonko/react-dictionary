@@ -20,7 +20,7 @@ const Icons = (props) => {
         <UseAnimations reverse={checked} onClick={() => { 
             setChecked(!checked);  
             start(audio_url, true);
-            setChecked(true);
+            setChecked(checked);
         }}
         size={25}
         wrapperStyle={{ marginRight: '1px' }}
