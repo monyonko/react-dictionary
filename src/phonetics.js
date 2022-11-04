@@ -11,9 +11,10 @@ export default function Phonetics(data){
             {
                 Object.keys(response).map((key,index) => {
                     if (response[index].audio){
+                      
                         return(
                             <span className="phoneticPage">
-                                <Icon />
+                                <Icon props={response[index].audio} />
                                 <p className="phonetic-aspect">{(response[index].text).slice(2, -1)}</p>
                                 <p className="pipe">|</p>
                             </span>
@@ -37,3 +38,4 @@ export default function Phonetics(data){
     )
     
 }
+

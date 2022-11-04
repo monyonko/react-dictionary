@@ -3,16 +3,24 @@ import UseAnimations from 'react-useanimations';
 import microphone2 from 'react-useanimations/lib/microphone2'
 
 
-const Icons = (props) => {
+const Icons = (props) => {   
+    console.log(props.props)
+    let audio_url = props.props
     const [checked, setChecked] = useState(true)
-    let audio = new Audio("/christmas.mp3")
-  
-    const start = () => {
-      audio.play()
-    }
+    
+    const start = (audio_url_link, state) => {
+        let audio = new Audio(audio_url_link);
+        if (state) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
+    };
     return(
         <UseAnimations reverse={checked} onClick={() => { 
             setChecked(!checked);  
+            start(audio_url, true);
+            setChecked(true);
         }}
         size={25}
         wrapperStyle={{ marginRight: '1px' }}
