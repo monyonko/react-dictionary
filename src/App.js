@@ -27,6 +27,7 @@ function App() {
     headers: {
       Authorization: `Bearer ${pexelApiKey}`}
     }).then(handlePexelResponse)
+    event.target.reset()
 
   }
   function handlePexelResponse(response){
