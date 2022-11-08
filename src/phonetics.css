@@ -2,7 +2,7 @@
     display: flex;
 }
 .phoneticPage{
-    margin-right: 2vh;
+    margin-right: 1vh;
     display: flex;
 }
 p{
@@ -12,15 +12,6 @@ p{
 .pipe{
     margin-left: 1vh;
 }
-@media only screen and (min-width: 500px){
-    .phoneticPage{
-        margin-left: 5vh;
-    } 
-}
-@media only screen and (min-width: 950px){
-    .phoneticPage{
-      margin-left: 15vh;
-    }
-  }
+
 
 

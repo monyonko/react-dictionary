@@ -4,24 +4,29 @@ import './images.css'
 
 export default function(data){
     
-    if(data.data.data){
+    if(data.data){
         console.log(data.data.data.photos)
         const response = data.data.data.photos
-        return (
-            <div className="wordImages">
-                <p className="imageTitle">Images</p>
-                <div className="images-section">      
-                    {
-                        Object.keys(response).map((key, index)=>{
-                            return(
-                                <SingleImage data={response[index]}/>
-                            )
-                        })
-                    }
+        if(response){
+            return (
+                <div className="wordImages">
+                    <p className="imageTitle">Images</p>
+                    <div className="images-section">      
+                        {
+                            Object.keys(response).map((key, index)=>{
+                                return(
+                                    <SingleImage data={response[index]}/>
+                                )
+                            })
+                        }
+                    </div>
                 </div>
-            </div>
-        )
+            )
+
+        }
+       
     }
+   
     
    
    

@@ -5,9 +5,23 @@
 
 }
 .App-header{
-  margin: 0;
+  margin-bottom: 2vh;
   padding:0;
   
+  
+}
+.App-header .headerTitle{
+  font-size: larger;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+}
+.App-header .dictionaryLink{
+  font-size: smaller;
+  text-align: left;
+}
+.searchSection{
+  margin-left: 0;
 }
 .input-search{
   width:60%;
@@ -38,24 +52,15 @@ footer{
   .App{
     margin: 2vh auto;
     font-size: 3vh;
-    width: 90vw;
-    
-    
+    width: 90vw;  
   }
-  .App-header, form{
-    text-align: center;
-  }
-  .mainWord{
-    margin-left: 5vh;
-  }
+  
   
 }
 @media only screen and (min-width: 950px){
   .App{
     width: 60vw;
-  }
-  .mainWord{
-    margin-left: 15vh;
+    
   }
   .input-search{
     width:60%;

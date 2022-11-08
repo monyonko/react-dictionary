@@ -7,11 +7,13 @@
     font-size: small;
     padding:.2vh;
     border-radius: .5vh;
-    box-shadow: 0 0 0 .1px grey;
+    box-shadow: 0 0 0 .5px grey;
     flex-wrap: nowrap;
     opacity: .9;
 }
 .synonymTitle{
     font-size: 2vh;
     opacity: .9;
+    margin-left: 7vh;
+    
 }
