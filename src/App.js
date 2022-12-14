@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react"
+import React, {useState} from "react"
 import axios from "axios"
 import './App.css';
 import Phonetics from './phonetics'
@@ -8,7 +8,7 @@ import Translation from './translations'
 import Images from './images'
 
 function App() {
-  const [searchInput, setSearchInput] = useState("")
+  const [searchInput, setSearchInput] = useState("user")
   const [phonetic, setPhonetic] = useState("")
   const [definition, setDefinition] = useState()
   const [antonyms, setAntonyms] = useState("")
@@ -18,14 +18,8 @@ function App() {
   const pexelUrl =`https://api.pexels.com/v1/search?query=${searchInput}`
   const [images, setImages] = useState("")
   const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchInput}`
-  
-  
-  useEffect(()=>{
-    setSearchInput("Moratorium");
-    searchWord()
-    setSearchInput("")
 
-  }, [])
+    
   function searchWord(){
     axios.get(apiUrl).then(handleResponse)
     axios.get(pexelUrl, {
@@ -57,6 +51,8 @@ function App() {
     setSearchInput(event.target.value)
 
   }
+  searchWord()
+ 
     return (
       <div className="App" >
         <header className="App-header">

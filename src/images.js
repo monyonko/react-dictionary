@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react"
+import React from "react"
 import SingleImage from './singleImage'
 import './images.css'
 
-export default function(data){
+export default function Images(data){
     
     if(data.data){
         console.log(data.data.data.photos)

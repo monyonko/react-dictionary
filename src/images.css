@@ -18,18 +18,7 @@
         height: 100px;
     }
     .imageTitle{
-        margin-left: 5vh;
         font-size: 3vh;
     }
     
 }
-@media only screen and (min-width: 320px){
-    .imageTitle{
-        margin-left: 10vh;
-    } 
-}
-@media only screen and (min-width: 950px){
-    .imageTitle{
-      margin-left: 15vh;
-    }
-  }
