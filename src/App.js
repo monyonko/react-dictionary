@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useEffect, useState} from "react"
 import axios from "axios"
 import './App.css';
 import Phonetics from './phonetics'
@@ -8,7 +8,7 @@ import Translation from './translations'
 import Images from './images'
 
 function App() {
-  const [searchInput, setSearchInput] = useState("")
+  const [searchInput, setSearchInput] = useState("ball")
   const [phonetic, setPhonetic] = useState("")
   const [definition, setDefinition] = useState()
   const [antonyms, setAntonyms] = useState("")
@@ -26,6 +26,8 @@ function App() {
     headers: {
       Authorization: `Bearer ${pexelApiKey}`}
     }).then(handlePexelResponse)
+    
+    
   }
   function handleSubmit(event){
     event.preventDefault()
@@ -51,6 +53,14 @@ function App() {
     setSearchInput(event.target.value)
 
   }
+  function defaultValues(){
+    searchWord()
+    
+  }
+  
+  useEffect(()=>{
+    defaultValues()
+  }, [])
   
  
     return (
