@@ -8,7 +8,7 @@ import Translation from './translations'
 import Images from './images'
 
 function App() {
-  const [searchInput, setSearchInput] = useState("user")
+  const [searchInput, setSearchInput] = useState("")
   const [phonetic, setPhonetic] = useState("")
   const [definition, setDefinition] = useState()
   const [antonyms, setAntonyms] = useState("")
@@ -51,7 +51,7 @@ function App() {
     setSearchInput(event.target.value)
 
   }
-  searchWord()
+  
  
     return (
       <div className="App" >
@@ -62,7 +62,7 @@ function App() {
         <hr/>
         <main>
           <form className="searchSection" onSubmit={handleSubmit}>
-            <input type="search" className="input-search" placeholder="Get word definition" onChange={handleChange}/>
+            <input type="search" className="input-search" placeholder="Get word definition"  onChange={handleChange}/>
             <input type="submit" className="input-submit" placeholder="Search"/>
           </form>
           <p className="mainWord"><strong>{word}</strong></p>
